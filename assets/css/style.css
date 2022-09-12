@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    grid-area: nav;
+    background-color: #000;
+    height: 10vh;
+    width: 100vw;
+    color: #fff;
+    text-align: center;
+}
+aside{
+    grid-area: aside;
+    background-color: red;
+    height: 90vh;
+    width: 20vw;
+    color: #fff;
+    text-align: center;
+}
+section{
+    grid-area: section;
+    background-color: blue;
+    height: 90vh;
+    width: 80vw;
+    color:white;
+    text-align: center;
+}
+footer{
+    grid-area: footer;
+    background-color: #000;
+    height: 10vh;
+    width: 100vw;
+    color: #fff;
+    text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "nav nav"
+    "aside section"
+    "footer footer";
+}
+.grid-products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 10px;
+}
+.grid-item{
+    display: flex;
+    flex-direction: column;
+}
