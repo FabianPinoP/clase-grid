@@ -1,0 +1,8 @@
+/* Ejercicio:
+Crea una cuadrícula de 4 columnas y 3 filas donde los elementos se distribuyan automáticamente en las 
+celdas de la siguiente manera:
+
+El primer elemento ("Elemento 1") debe ocupar las dos primeras columnas de las 2 primeras filas.
+El tercer elemento ("Elemento 3") debe ocupar la primera columna de la tercera fila.
+El cuarto elemento ("Elemento 4") debe ocupar la segunda columna de la tercera fila.
+El quinto elemento ("Elemento 5") debe ocupar la tercera columna de la tercera fila. */

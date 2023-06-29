@@ -1,0 +1,51 @@
+/* Especificando filas de tamaño fijo: */
+
+  /* .container {
+    display: grid;
+    grid-template-rows: 100px 200px 50px;
+  }
+
+  .item {
+    background-color: lightblue;
+    padding: 10px;
+    border: 1px solid black;
+  } */
+
+/* la cuadrícula tiene tres filas con tamaños fijos. La primera fila tiene una altura de 100 píxeles, 
+la segunda fila tiene una altura de 200 píxeles y la tercera fila tiene una altura de 50 píxeles. 
+Los elementos dentro de la cuadrícula tienen un fondo de color azul claro y un relleno de 10 píxeles. */
+
+/* el tercer elemento se desborda debido al tamaño fijo de la cuadricula 
+que es muy pequeño para el contenido */
+
+/* Especificando filas de tamaño fraccional: */
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+.item {
+  background-color: lightblue;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+/* la cuadrícula también tiene tres filas, pero los tamaños están especificados en unidades fraccionales (fr). 
+La primera y la tercera fila tienen un tamaño fraccional igual, mientras que la segunda fila tiene un tamaño 
+fraccional doble que las otras dos. */
+
+/* Especificando filas de tamaño automático: */
+
+/* .container {
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+.item {
+  background-color: lightblue;
+  padding: 10px;
+} */
+
+/* las filas se ajustarán automáticamente para adaptarse al contenido que contienen. Cada fila se ajustará en 
+altura según el contenido de su elemento más alto. */

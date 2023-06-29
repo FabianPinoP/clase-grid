@@ -1,0 +1,24 @@
+.container {
+  display: grid;
+  /* Convertimos el contenedor en una cuadrícula */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* Definimos tres columnas de tamaño fraccional */
+  justify-items: center;
+  /* Centramos horizontalmente los elementos dentro de las celdas */
+  align-items: center;
+  /* Centramos verticalmente los elementos dentro de las celdas */
+  gap: 10px;
+  /* Establecemos un espacio de 10 píxeles entre las celdas */
+}
+
+.item {
+  background-color: lightblue;
+  padding: 20px;
+}
+
+/* En este ejemplo, creamos una cuadrícula con 3 columnas de tamaño fraccional
+(1fr). justify-items lo utilizamos para centrar horizontalmente los elementos
+dentro de las celdas y align-items se utiliza para centrar verticalmente los
+elementos dentro de las celdas. Cada elemento dentro del contenedor se
+muestra como una celda con fondo azul claro y un relleno de 20 píxeles, y
+están alineados y justificados en el centro de sus respectivas celdas. */

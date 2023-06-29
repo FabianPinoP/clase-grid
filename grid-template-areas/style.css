@@ -1,0 +1,47 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* Dos columnas de tamaño fraccional */
+  /* grid-template-rows: auto 1fr auto;
+  Alturas automáticas y una fila de tamaño fraccional */
+  gap: 10px;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+}
+
+.item {
+  background-color: lightblue;
+  padding: 20px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  height: 80vh;
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/*aqui tenemos una cuadrícula con 2 columnas y 3 filas. Las
+áreas de la cuadrícula se han definido mediante grid-template-areas, donde
+"header", "sidebar", "content" y "footer" representan las áreas
+correspondientes. Luego, cada elemento dentro del contenedor tiene una clase
+asociada a su área respectiva utilizando grid-area. Por ejemplo, el elemento
+con la clase "header" tiene grid-area: header. Esto resulta en un diseño
+donde el elemento con la clase "header" ocupa las dos columnas de la primera
+fila, el elemento con la clase "sidebar" ocupa la primera columna de la
+segunda fila, el elemento con la clase "content" ocupa la segunda columna de
+la segunda fila, y el elemento con la clase "footer" ocupa las dos columnas
+de la tercera fila. Los elementos tienen un fondo azul claro y un relleno de
+20 píxeles para una mejor visualización. */

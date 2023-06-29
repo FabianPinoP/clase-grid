@@ -1,0 +1,17 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  /* Tres columnas de tamaño fraccional igual */
+  /* En este caso,
+  cada columna ocupará un tercio del ancho total disponible,
+  independientemente del tamaño de la ventana o del contenedor que los envuelve. 
+  Puedes ajustar el número de columnas y asignar diferentes valores a fr para controlar 
+  la distribución del espacio en la cuadrícula según tus necesidades. */
+}
+
+.item {
+  background-color: lightblue;
+  padding: 40px;
+  border: 1px solid black;
+}

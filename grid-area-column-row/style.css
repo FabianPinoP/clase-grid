@@ -1,0 +1,52 @@
+.container {
+  display: grid;
+  /* Convertimos el contenedor en una cuadrícula */
+  grid-template-columns: 1fr 2fr;
+  /* Dos columnas de tamaño fraccional */
+  grid-template-rows: auto 1fr auto;
+  /* Tres filas: una de altura automática, una de tamaño fraccional y una de altura automática */
+  gap: 10px;
+  /* Establecemos un espacio de 10 píxeles entre las celdas */
+  grid-template-areas:
+    "header header"
+    /* Definimos un área llamada "header" que abarca dos columnas */
+    "sidebar content"
+    /* Definimos un área llamada "sidebar" y un área llamada "content" que abarcan una columna cada una */
+    "footer footer";
+  /* Definimos un área llamada "footer" que abarca dos columnas */
+}
+
+.item {
+  background-color: lightblue;
+  padding: 20px;
+}
+
+.header {
+  grid-area: header;
+  /* Asignamos el área "header" al elemento con la clase "header" */
+}
+
+.sidebar {
+  grid-area: sidebar;
+  /* Asignamos el área "sidebar" al elemento con la clase "sidebar" */
+}
+
+.content {
+  grid-area: content;
+  /* Asignamos el área "content" al elemento con la clase "content" */
+}
+
+.footer {
+  grid-area: footer;
+  /* Asignamos el área "footer" al elemento con la clase "footer" */
+}
+
+/* aqui tenemos una cuadrícula con 2 columnas y 3 filas.
+grid-template-columns define dos columnas: una de tamaño fraccional (1fr) y
+otra de tamaño fraccional doble (2fr). 
+grid-template-rows establece tres filas: una de altura automática (auto), una de tamaño fraccional (1fr) y otra
+de altura automática (auto). 
+grid-template-areas se utiliza para asignar nombres a las áreas de la cuadrícula y definir su diseño. 
+Cada elemento dentro
+del contenedor tiene una clase que corresponde a un área específica y se
+muestra con un fondo azul claro y un relleno de 20 píxeles. */

@@ -1,0 +1,53 @@
+/* columnas de tamaño fijo: */
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 200px 50px;
+}
+
+.item {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+/* la cuadrícula tiene tres columnas con tamaños fijos.
+La primera columna tiene un ancho de 100 píxeles, la segunda columna tiene un ancho de 
+200 píxeles y la tercera columna tiene un ancho de 50 píxeles. Los elementos dentro de 
+la cuadrícula tienen un fondo de color azul claro y un relleno de 10 píxeles. */
+
+/* el tercer elemento se desborda debido al tamaño fijo de la cuadricula 
+que es muy pequeño para el contenido */
+
+/* Especificar columnas de tamaño fraccional: */
+
+/* .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.item {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding: 10px;
+} */
+
+/* la cuadrícula también tiene tres columnas, pero los tamaños están especificados en unidades 
+fraccionales (fr). La primera y la tercera columna tienen un tamaño fraccional igual, mientras 
+que la segunda columna tiene un tamaño fraccional doble que las otras dos. */
+
+/* columnas de tamaño automático: */
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.item {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+/* En este caso, las columnas se ajustarán automáticamente para adaptarse al contenido que contienen. 
+Cada columna se ajustará en anchura según el contenido de su elemento más ancho. */

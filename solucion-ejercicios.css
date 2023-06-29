@@ -1,0 +1,186 @@
+/* ejercicio 1 */
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* Dos columnas de tamaño automático */
+  gap: 20px;
+  /* Espacio de 20 píxeles entre elementos */
+  grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.item {
+  background-color: lightblue;
+  padding: 10px;
+}
+
+/* ejercicio 2 */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* Tres columnas de tamaño fraccional */
+  grid-template-rows: 1fr 1fr 1fr;
+  /* Dos filas de tamaño fraccional */
+  gap: 10px;
+  /* Espacio de 10 píxeles entre elementos */
+  grid-template-areas:
+    "big big ."
+    "big big ."
+    "elem1 elem2 elem3";
+}
+
+.item {
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.big {
+  grid-area: big;
+  /* Ocupa dos filas y dos columnas */
+}
+
+.elem1 {
+  grid-area: elem1;
+}
+
+.elem2 {
+  grid-area: elem2;
+}
+
+.elem3 {
+  grid-area: elem3;
+}
+
+/* ejercicio 3 */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* Cuatro columnas de tamaño fraccional */
+  grid-template-rows: repeat(4, 1fr);
+  /* Cuatro filas de tamaño fraccional */
+  gap: 10px;
+  /* Espacio de 10 píxeles entre elementos */
+}
+
+.item {
+  padding: 10px;
+}
+
+.item:nth-child(1) {
+  background-color: lightblue;
+}
+
+.item:nth-child(2) {
+  background-color: lightgreen;
+}
+
+.item:nth-child(3) {
+  background-color: lightyellow;
+}
+
+.item:nth-child(4) {
+  background-color: lightpink;
+}
+
+.item:nth-child(5) {
+  background-color: lightcoral;
+}
+
+.item:nth-child(6) {
+  background-color: lightseagreen;
+}
+
+.item:nth-child(7) {
+  background-color: lightsalmon;
+}
+
+.item:nth-child(8) {
+  background-color: lightskyblue;
+}
+
+.item:nth-child(9) {
+  background-color: lightsteelblue;
+}
+
+.item:nth-child(10) {
+  background-color: lightgray;
+}
+
+.item:nth-child(11) {
+  background-color: lightgoldenrodyellow;
+}
+
+.item:nth-child(12) {
+  background-color: lightcyan;
+}
+
+.item:nth-child(13) {
+  background-color: lightcoral;
+}
+
+.item:nth-child(14) {
+  background-color: lightblue;
+}
+
+.item:nth-child(15) {
+  background-color: lightgreen;
+}
+
+.item:nth-child(16) {
+  background-color: lightyellow;
+}
+
+/* bonus nth-child
+
+La pseudo-clase nth-child se utiliza en CSS para seleccionar elementos que ocupan una posición 
+específica dentro de su contenedor padre. Permite aplicar estilos a elementos en función de su posición 
+relativa a otros elementos hermanos.
+
+:nth-child(n)
+
+:nth-child(1): selecciona el primer elemento.
+:nth-child(even): selecciona los elementos pares.
+:nth-child(odd): selecciona los elementos impares.
+:nth-child(3n): selecciona los elementos en posiciones múltiplos de 3.
+:nth-child(2n+1): selecciona los elementos impares, comenzando desde el segundo elemento. */
+
+/* ejercicio 4 */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* Cuatro columnas de tamaño fraccional */
+  grid-template-rows: 1fr 1fr 1fr;
+  /* Tres filas de tamaño fraccional */
+  gap: 10px;
+  /* Espacio de 10 píxeles entre elementos */
+  grid-template-areas:
+    "big big . ."
+    "big big . ."
+    ". . elem3 elem3"
+    ". . elem4 elem5";
+}
+
+.item {
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.big {
+  grid-area: big;
+  /* Ocupa dos filas y dos columnas */
+}
+
+.elem3 {
+  grid-area: elem3;
+}
+
+.elem4 {
+  grid-area: elem4;
+}
+
+.elem5 {
+  grid-area: elem5;
+}

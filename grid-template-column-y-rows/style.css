@@ -1,0 +1,23 @@
+.container {
+  display: grid;
+  /* Utilizamos "display: grid" para convertir el contenedor en una cuadrícula */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* Definimos tres columnas de tamaño fraccional */
+  grid-template-rows: auto auto;
+  /* Definimos dos filas de altura automática */
+  gap: 10px;
+  /* Establecemos un espacio de 10 píxeles entre las celdas */
+}
+
+.item {
+  background-color: lightblue;
+  padding: 20px;
+}
+
+/* En este ejemplo, creamos una cuadrícula con 3 columnas de tamaño fraccional
+(1fr) y dos filas de altura automática (auto). Los elementos se colocarán
+automáticamente en filas según el orden en el que se encuentren en el HTML.
+Dado que no se ha especificado una altura explícita para las filas, se
+ajustarán automáticamente a la altura del contenido dentro de ellas. El
+espacio entre las celdas es de 10 píxeles y cada elemento tiene un fondo
+azul claro y un relleno de 20 píxeles. */
